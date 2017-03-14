@@ -1,2 +1,2 @@
 # hello-world
-github test
+projekt na Daj Się Poznać
