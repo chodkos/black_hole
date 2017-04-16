@@ -4,17 +4,21 @@ import java.awt.image.BufferedImage;
 
 public class Assets {
 	
-	private static final int width = 52, height = 52;
+	private static final int width = 32, height = 32;
 	
 	public static BufferedImage up, left, right, down;
 	
 	public static void init(){
 		SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/spricik.jpg"));
 		
-		up = sheet.crop(0, 0, width, height);
-		left = sheet.crop(0, height, width, height);
-		right = sheet.crop(width, height, width, height);
-		down = sheet.crop(width, 0, width, height);
+		up = sheet.crop(0, height, width, height);
+		left = sheet.crop(2 * width, 0, width, height);
+		right = sheet.crop(2 * width, 0, width, height);
+		down = sheet.crop(0, height, width, height);
+		grass = sheet.crop(0, 0, width, height);
+		rock = sheet.crop(width, 0, width, height);
+		kamien = sheet.crop(width, 0, width, height);
+		drzewo = sheet.crop(width, height, width * 2, height * 2);
 	}
 
 }
