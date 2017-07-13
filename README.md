@@ -1,2 +1,2 @@
 # hello-world
-projekt na Daj Się Poznać
+niekompletny projekt na Daj Się Poznać
